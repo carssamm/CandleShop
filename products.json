@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": 0,
+      "name": "Kerze 0",
+      "description": "Text Kerze 0",
+      "price": {
+        "net": 0.52,
+        "tax": 19,
+        "currency": "EUR"
+      }
+    },
+    {
+      "id": 1,
+      "name": "Kerze 1",
+      "description": "Text Kerze 1",
+      "price": {
+        "net": 1.15,
+        "tax": 19,
+        "currency": "EUR"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Kerze 2",
+      "description": "Text Kerze 2",
+      "price": {
+        "net": 2.25,
+        "tax": 19,
+        "currency": "EUR"
+      }
+    }
+  ]
+}
