@@ -4,6 +4,10 @@
       "id": 0,
       "name": "Kerze 0",
       "description": "Text Kerze 0",
+      "image": {
+        "src": "/assets/img/kerze_bubble.jpeg",
+        "alt": "Google Logo"
+      },
       "price": {
         "net": 0.52,
         "tax": 19,
@@ -14,6 +18,10 @@
       "id": 1,
       "name": "Kerze 1",
       "description": "Text Kerze 1",
+      "image": {
+        "src": "/assets/img/kerze_tannenbaum.jpg",
+        "alt": "Google Logo"
+      },
       "price": {
         "net": 1.15,
         "tax": 19,
@@ -24,6 +32,10 @@
       "id": 2,
       "name": "Kerze 2",
       "description": "Text Kerze 2",
+      "image": {
+        "src": "/assets/img/kerze_tannenzapfen.jpg",
+        "alt": "Google Logo"
+      },
       "price": {
         "net": 2.25,
         "tax": 19,
