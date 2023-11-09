@@ -1,16 +1,53 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
     <title>CandleShop - BBS1</title>
-</head>
-<body>
-    <header>
-        
-    </header>
-    <footer></footer>
-</body>
+  </head>
+  <body>
+      <!-- Header section containing the logo, title, and navigation items -->
+      <div id="header">
+        <div id="header-mobil">
+        <!-- Off-canvas symbol for mobile view, triggers the openNav function on click -->
+        <div class="offcanvasymbol"><a href="javascript:void(0)" class="offcanvasymbol" onclick="openNav()">&#9776</a></div>
+        <!-- Title section with logo and site name -->
+        <div id="title">
+            <img id="logo" src="assets/img/logo_candleshop_12_11_10_2023_rs.png" alt="CandleShop-Logo">
+            <h1>Candle Shop</h1>
+        </div>
+      </div>
+        <!-- Navigation items with links and walls for separation -->
+        <div id="header-items">
+          <div class="header-item"><a href="#" style="color: #6f6f6f">Startseite</a></div>
+          <div class="wall"></div>
+          <!-- Dropdown-triggering header item with mouseover event -->
+          <div class="header-item" onmouseover="showDropDown()">
+            <a href="#">Produkte</a>
+          </div>
+          <div class="wall"></div>
+          <div class="header-item"><a href="#">Produktion</a></div>
+          <div class="wall"></div>
+          <div class="header-item"><a href="#">Kontakt</a></div>
+        </div>
+      </div>
+      <!-- Dropdown bar with mouseout event to hide the dropdown content -->
+      <div class="drpdwn-bar" onmouseout="hideDropDown()">
+        <div class="drpdwn-content">
+          <a href="#">Produkt 1</a>
+          <a href="#">Produkt 2</a>
+          <a href="#">Produkt 3</a>
+        </div>
+      </div>
+      <!-- Side navigation bar with close button, links, and items -->
+      <div id="SideNavID" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="sidenav-item" href="#">Startseite</a>
+        <a class="sidenav-item" href="#">Produkte</a>
+        <a class="sidenav-item" href="#">Produktion</a>
+        <a class="sidenav-item" href="#">Kontakt</a>
+      </div>
+  </body>
 </html>
