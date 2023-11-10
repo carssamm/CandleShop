@@ -22,6 +22,10 @@ function openNav() {
     document.getElementById("offcanvasymbol").style.visibility = "hidden";
     document.getElementById("header").style.background = "#797979";
     document.body.style.backgroundColor = "#949494";
+    for (var i = 0; i < document.images.length; i++) {
+        // Setze den Filter für Helligkeit auf 50%
+        document.images[i].style.filter = "brightness(0.5)";
+      }
   }
   
   // Closes the sidebar, resets the width and left margin of the title,
@@ -32,6 +36,10 @@ function openNav() {
     document.getElementById("offcanvasymbol").style.visibility = "visible";
     document.getElementById("header").style.background = "#d9d9d9";
     document.body.style.backgroundColor = "#f0f0f0";
+    for (var i = 0; i < document.images.length; i++) {
+        // Setze den Filter für Helligkeit auf 100%
+        document.images[i].style.filter = "brightness(1)";
+      }
   }
   
   // Shows the dropdown menu by adding the 'active' CSS class

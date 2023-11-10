@@ -102,7 +102,9 @@ body {
 h1, h2, h3, h4, h5, h6{
   font-family: EB Garamond;
 }
-
+img{
+  transition: 0.2s;
+}
 /* Header styles, fixed header, background and shadow transition */
 #header {
   display: flex;
