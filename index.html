@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="index.js" defer></script>
     <title>CandleShop - BBS1</title>
   </head>
@@ -12,7 +17,7 @@
       <div id="header">
         <div id="header-mobil">
         <!-- Off-canvas symbol for mobile view, triggers the openNav function on click -->
-        <div class="offcanvasymbol"><a href="javascript:void(0)" class="offcanvasymbol" onclick="openNav()">&#9776</a></div>
+        <div class="offcanvasymbol" id="offcanvasymbol"><a href="javascript:void(0)" class="offcanvasymbol" onclick="openNav()">&#9776</a></div>
         <!-- Title section with logo and site name -->
         <div id="title">
             <img id="logo" src="assets/img/logo_candleshop_12_11_10_2023_rs.png" alt="CandleShop-Logo">
@@ -21,16 +26,16 @@
       </div>
         <!-- Navigation items with links and walls for separation -->
         <div id="header-items">
-          <div class="header-item"><a href="#" style="color: #6f6f6f">Startseite</a></div>
+          <div class="header-item" onmouseover="hideDropDown()"><a href="#" style="color: #6f6f6f">Startseite</a></div>
           <div class="wall"></div>
           <!-- Dropdown-triggering header item with mouseover event -->
           <div class="header-item" onmouseover="showDropDown()">
             <a href="#">Produkte</a>
           </div>
           <div class="wall"></div>
-          <div class="header-item"><a href="#">Produktion</a></div>
+          <div class="header-item" onmouseover="hideDropDown()"><a href="#">Produktion</a></div>
           <div class="wall"></div>
-          <div class="header-item"><a href="#">Kontakt</a></div>
+          <div class="header-item" onmouseover="hideDropDown()"><a href="#">Kontakt</a></div>
         </div>
       </div>
       <!-- Dropdown bar with mouseout event to hide the dropdown content -->
@@ -49,5 +54,53 @@
         <a class="sidenav-item" href="#">Produktion</a>
         <a class="sidenav-item" href="#">Kontakt</a>
       </div>
+      <!-- slider start -->
+    <div class="slider-container">
+      <div class="candle-slider">
+          <div class="single-slide">
+              <a href="#">
+                  <img class="slider-img" src="assets/img/dummy.png" alt="dummy">
+              </a>
+              <div class="product-title-container">
+                  <h3>Produkt 1</h3>
+              </div>
+              <div class="product-info-inner">
+                  <p>19,99€</p>
+                  <a class="more-info-button" href="#">
+                      Mehr Info
+                  </a>
+              </div>
+          </div>
+          <div class="single-slide">
+              <a href="#">
+                  <img class="slider-img" src="assets/img/dummy.png" alt="dummy">
+              </a>
+              <div class="product-title-container">
+                  <h3>Produkt 2</h3>
+              </div>
+              <div class="product-info-inner">
+                  <p>14,99€</p>
+                  <a class="more-info-button" href="#">
+                      Mehr Info
+                  </a>
+              </div>
+          </div>
+          <div class="single-slide">
+              <a href="#">
+                  <img class="slider-img" src="assets/img/dummy.png" alt="dummy">
+              </a>
+              <div class="product-title-container">
+                  <h3>Produkt 3</h3>
+              </div>
+              <div class="product-info-inner">
+                  <p>9,99€</p>
+                  <a class="more-info-button" href="#">
+                      Mehr Info
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- slider end -->
   </body>
 </html>

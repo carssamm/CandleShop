@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id": 0,
+      "name": "Kerze 0",
+      "description": "Text Kerze 0",
+      "image": {
+        "src": "/assets/img/kerze_bubble.jpeg",
+        "alt": "Google Logo"
+      },
+      "price": {
+        "net": 0.52,
+        "tax": 19,
+        "currency": "EUR"
+      }
+    },
+    {
+      "id": 1,
+      "name": "Kerze 1",
+      "description": "Hallo. Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man macht keinen Sinn. Wirklich keinen Sinn. Man wird zusammenhangslos eingeschoben und rumgedreht – und oftmals gar nicht erst gelesen. Aber bin ich allein deshalb ein schlechterer Text als andere? Na gut, ich werde nie in den Bestsellerlisten stehen. Aber andere Texte schaffen das auch nicht. Und darum stört es mich nicht besonders blind zu sein. Und sollten Sie diese Zeilen noch immer lesen, so habe ich als kleiner Blindtext etwas geschafft, wovon all die richtigen und wichtigen Texte meist nur träumen.",
+      "image": {
+        "src": "/assets/img/kerze_tannenbaum.jpg",
+        "alt": "Google Logo"
+      },
+      "price": {
+        "net": 1.15,
+        "tax": 19,
+        "currency": "EUR"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Kerze 2",
+      "description": "Text Kerze 2",
+      "image": {
+        "src": "/assets/img/kerze_tannenzapfen.jpg",
+        "alt": "Google Logo"
+      },
+      "price": {
+        "net": 2.25,
+        "tax": 19,
+        "currency": "EUR"
+      }
+    }
+  ]
+}
