@@ -84,7 +84,9 @@
 
 #content-wrap {
     padding-bottom: 2.5rem; /* Footer height */
-}/* General styles for body and font family */
+}
+
+/* General styles for body and font family */
 html,
 body {
   overflow-x: hidden;
