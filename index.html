@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="index.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -11,119 +11,171 @@
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="index.js" defer></script>
     <title>CandleShop - BBS1</title>
-  </head>
-  <body id="body">
-    <div id="content-wrap">
-      <!-- Header section containing the logo, title, and navigation items -->
-      <div id="header">
+</head>
+<body id="body">
+<div id="content-wrap">
+    <!-- Header section containing the logo, title, and navigation items -->
+    <div id="header">
         <div id="header-mobil">
-        <!-- Off-canvas symbol for mobile view, triggers the openNav function on click -->
-        <div class="offcanvasymbol" id="offcanvasymbol"><a href="javascript:void(0)" class="offcanvasymbol" onclick="openNav()">&#9776</a></div>
-        <!-- Title section with logo and site name -->
-        <div id="title">
-            <img id="logo" src="assets/img/logo_candleshop_12_11_10_2023_rs.png" alt="CandleShop-Logo" onclick="location.href = 'index.html'">
-            <h1 class="title-text" onclick="location.href = 'index.html'">Candle Shop</h1>
+            <!-- Off-canvas symbol for mobile view, triggers the openNav function on click -->
+            <div class="offcanvasymbol" id="offcanvasymbol"><a href="javascript:void(0)" class="offcanvasymbol"
+                                                               onclick="openNav()">&#9776</a></div>
+            <!-- Title section with logo and site name -->
+            <div id="title">
+                <img id="logo" src="assets/img/logo_candleshop_12_11_10_2023_rs.png" alt="CandleShop-Logo"
+                     onclick="location.href = 'index.html'">
+                <h1 class="title-text" onclick="location.href = 'index.html'">Candle Shop</h1>
+            </div>
         </div>
-      </div>
         <!-- Navigation items with links and walls for separation -->
         <div id="header-items">
-          <div class="header-item" onmouseover="hideDropDown()"><a href="#" style="color: #6f6f6f">Startseite</a></div>
-          <div class="wall"></div>
-          <!-- Dropdown-triggering header item with mouseover event -->
-          <div class="header-item" onmouseover="showDropDown()">
-            <a href="product.html">Produkte</a>
-          </div>
-          <div class="wall"></div>
-          <div class="header-item" onmouseover="hideDropDown()"><a href="#">Produktion</a></div>
-          <div class="wall"></div>
-          <div class="header-item" onmouseover="hideDropDown()"><a href="#">Kontakt</a></div>
+            <div class="header-item" onmouseover="hideDropDown()"><a href="#" style="color: #6f6f6f">Startseite</a>
+            </div>
+            <div class="wall"></div>
+            <!-- Dropdown-triggering header item with mouseover event -->
+            <div class="header-item" onmouseover="showDropDown()">
+                <a href="product.html">Produkte</a>
+            </div>
+            <div class="wall"></div>
+            <div class="header-item" onmouseover="hideDropDown()"><a href="production.html">Produktion</a></div>
+            <div class="wall"></div>
+            <div class="header-item" onmouseover="hideDropDown()"><a href="#">Kontakt</a></div>
         </div>
-      </div>
-      <!-- Dropdown bar with mouseout event to hide the dropdown content -->
-      <div class="drpdwn-bar">
+    </div>
+    <!-- Dropdown bar with mouseout event to hide the dropdown content -->
+    <div class="drpdwn-bar">
         <div class="drpdwn-content">
-          <a href="#">Produkt 1</a>
-          <a href="#">Produkt 2</a>
-          <a href="#">Produkt 3</a>
+            <a href="#">Produkt 1</a>
+            <a href="#">Produkt 2</a>
+            <a href="#">Produkt 3</a>
         </div>
-      </div>
-      <div class="container">
+    </div>
+    <div class="container">
         <h2>Über uns</h2>
         <div class="text" id="textcontainer">
-          <p id="paragraph">
-            Wir, die Mitglieder des Schülerunternehmens „Candleshop“, bestehen aus 14 engagierten Schülerinnen und Schülern der HA23B und nehmen unsere Tätigkeit mit Stolz im Rahmen unserer einjährigen Berufsfachschule Wirtschaft mit Schwerpunkt Handel an den Berufsbildenden Schulen I in Lüneburg wahr.</p>
-            <p id="paragraph2" style="display: none"><br>Hauptziel ist die Produktion und der Verkauf hochwertiger Kerzen, die an unserem Verkaufsstand in der Schule erhältlich sind. Unser einzigartiges Konzept hebt sich hervor, da wir sowohl regionales Bienenwachs als auch Sojawachs nutzen, um eine breite Palette von Kerzen anzubieten. Damit können wir auch veganen Kunden gerecht werden, die unsere Kerzen schätzen. Die Verwendung von lokal beschafftem Bienenwachs stärkt die Verbindung zur Region und unterstützt gleichzeitig Imker vor Ort.</p>
-            <p id="paragraph3" style="display: none"><br>Wir laden Sie herzlich dazu ein, unsere Kerzen und unsere Philosophie während des anstehenden Winterzaubers in der Pausenhalle der BBS I Lüneburg am 05. Dezember 2023 zu erleben.
-            Wir sind überzeugt, dass Sie von der Qualität unserer Kerzen und dem Engagement unseres Schülerunternehmens beeindruckt sein werden. Mit Ihrem Kauf unterstützen Sie nicht nur unsere Bildung, sondern tragen auch zur Förderung nachhaltiger und regionaler Produkte bei.</p>
+            <p id="paragraph">
+              Wir, die Mitglieder des Schülerunternehmens „Candleshop“, bestehen aus 14 engagierten Schülerinnen und
+                Schülern der HA23B und nehmen unsere Tätigkeit mit Stolz im Rahmen unserer einjährigen Berufsfachschule
+                Wirtschaft mit Schwerpunkt Handel an den Berufsbildenden Schulen I in Lüneburg wahr.</p>
+            <p id="paragraph2" style="display: none"><br>Hauptziel ist die Produktion und der Verkauf hochwertiger Kerzen, die an unserem Verkaufsstand in der
+                Schule erhältlich sind. Unser einzigartiges Konzept hebt sich hervor, da wir sowohl regionales
+                Bienenwachs als auch Sojawachs nutzen, um eine breite Palette von Kerzen anzubieten. Damit können wir
+                auch veganen Kunden gerecht werden, die unsere Kerzen schätzen. Die Verwendung von lokal beschafftem
+                Bienenwachs stärkt die Verbindung zur Region und unterstützt gleichzeitig Imker vor Ort.</p>
+            <p id="paragraph3" style="display: none"><br>Wir laden Sie herzlich dazu ein, unsere Kerzen und unsere Philosophie während des anstehenden Winterzaubers
+            in der Pausenhalle der BBS I Lüneburg am 05. Dezember 2023 zu erleben.
+            Wir sind überzeugt, dass Sie von der Qualität unserer Kerzen und dem Engagement unseres Schülerunternehmens
+            beeindruckt sein werden. Mit Ihrem Kauf unterstützen Sie nicht nur unsere Bildung, sondern tragen auch zur
+            Förderung nachhaltiger und regionaler Produkte bei.</p>
           <span id="more" class="read-more" onclick="toggleText()">... Read more</span>
           </div>
 
         <div class="image">
-          <img src="/assets/img/kerzen-giessen-2.jpg" alt="Ihr Bild">
+            <img src="/assets/img/kerzen-giessen-2.jpg" alt="Ihr Bild">
         </div>
     </div>
-      <!-- Side navigation bar with close button, links, and items -->
-      <div id="SideNavID" class="sidenav">
+    <!-- Side navigation bar with close button, links, and items -->
+    <div id="SideNavID" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a class="sidenav-item" href="#">Startseite</a>
         <a class="sidenav-item" href="product.html">Produkte</a>
         <a class="sidenav-item" href="#">Produktion</a>
         <a class="sidenav-item" href="#">Kontakt</a>
-      </div>
-      <!-- slider start -->
-    <div class="slider-container">
-      <div class="candle-slider">
-          <div class="single-slide">
-              <a href="#">
-                  <img class="slider-img" src="assets/img/dummy.png" alt="dummy">
-              </a>
-              <div class="product-title-container">
-                  <h3>Produkt 1</h3>
-              </div>
-              <div class="product-info-inner">
-                  <p>19,99€</p>
-                  <a class="more-info-button" href="#">
-                      Mehr Info
-                  </a>
-              </div>
-          </div>
-          <div class="single-slide">
-              <a href="#">
-                  <img class="slider-img" src="assets/img/dummy.png" alt="dummy">
-              </a>
-              <div class="product-title-container">
-                  <h3>Produkt 2</h3>
-              </div>
-              <div class="product-info-inner">
-                  <p>14,99€</p>
-                  <a class="more-info-button" href="#">
-                      Mehr Info
-                  </a>
-              </div>
-          </div>
-          <div class="single-slide">
-              <a href="#">
-                  <img class="slider-img" src="assets/img/dummy.png" alt="dummy">
-              </a>
-              <div class="product-title-container">
-                  <h3>Produkt 3</h3>
-              </div>
-              <div class="product-info-inner">
-                  <p>9,99€</p>
-                  <a class="more-info-button" href="#">
-                      Mehr Info
-                  </a>
-              </div>
-          </div>
-      </div>
     </div>
-  </div>
-  <!-- slider end -->
-  <footer id="footer">
-    <hr style="width:95%; margin: auto;"/>  
+    <!-- slider start -->
+    <div class="slider-container">
+        <div class="candle-slider">
+            <div class="single-slide">
+                <a href="#">
+                    <img class="slider-img" src="assets/img/dummy.png" alt="dummy">
+                </a>
+                <div class="product-title-container">
+                    <h3>Produkt 1</h3>
+                </div>
+                <div class="product-info-inner">
+                    <p>19,99€</p>
+                    <a class="more-info-button" href="#">
+                        Mehr Info
+                    </a>
+                </div>
+            </div>
+            <div class="single-slide">
+                <a href="#">
+                    <img class="slider-img" src="assets/img/dummy.png" alt="dummy">
+                </a>
+                <div class="product-title-container">
+                    <h3>Produkt 2</h3>
+                </div>
+                <div class="product-info-inner">
+                    <p>14,99€</p>
+                    <a class="more-info-button" href="#">
+                        Mehr Info
+                    </a>
+                </div>
+            </div>
+            <div class="single-slide">
+                <a href="#">
+                    <img class="slider-img" src="assets/img/dummy.png" alt="dummy">
+                </a>
+                <div class="product-title-container">
+                    <h3>Produkt 3</h3>
+                </div>
+                <div class="product-info-inner">
+                    <p>9,99€</p>
+                    <a class="more-info-button" href="#">
+                        Mehr Info
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- slider end -->
+
+<div class="contact-flex">
+    <div class="info-parent">
+        <h3>
+            Wo finden Sie uns?
+        </h3>
+        <div class="info-single">
+            <div class="icon-container">
+                <img class="icon-image" src="assets/img/location-dot-regular.svg" alt="location icon">
+            </div>
+            <div class="info-text-container">
+                <p>Spillbrunnenweg 1,<br>21337 Lüneburg</p>
+            </div>
+        </div>
+        <div class="info-single">
+            <div class="icon-container">
+                <img class="icon-image" src="assets/img/phone-solid.svg" alt="telephone icon">
+            </div>
+            <div class="info-text-container">
+                <a href="tel:1234 56789">1234 56789</a>
+            </div>
+        </div>
+        <div class="info-single">
+            <div class="icon-container">
+                <img class="icon-image" src="assets/img/envelope-solid.svg" alt="envelope icon">
+            </div>
+            <div class="info-text-container">
+                <a href="mailto:info@bbs1-lueneburg.de">info@bbs1-lueneburg.de</a>
+            </div>
+        </div>
+    </div>
+    <div class="info-parent">
+        <div class="map-container">
+            <a href="#">
+                <img class="map-image" src="assets/img/map-image.png" alt="Google Maps Route">
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+<footer id="footer">
+    <hr style="width:95%; margin: auto;"/>
     <div id="footer-content">
         <a class="text-dark" style="text-decoration:none;" href="imprint.html">Impressum</a>
-        <a class="text-dark" style="text-decoration:none;" href="#">Datenschutz</a>
+        <a class="text-dark" style="text-decoration:none;" href="https://www.bbs1-lueneburg.de/datenschutz.html">Datenschutz</a>
     </div>
   </footer>
   </body>
