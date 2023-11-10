@@ -58,4 +58,19 @@ function openNav() {
   window.addEventListener('resize', function() {
       location.reload();
   });
+  function toggleText() {
+    var paragraph2 = document.getElementById('paragraph2');
+    var paragraph3 = document.getElementById('paragraph3');
+    var moreText = document.getElementById('more');
+
+    if (paragraph2.style.display === 'none') {
+      paragraph2.style.display = 'block';
+      paragraph3.style.display = 'block';
+      moreText.textContent = ' Show less';
+    } else {
+      paragraph2.style.display = 'none';
+      paragraph3.style.display = 'none';
+      moreText.textContent = '... Read more';
+    }
+  }
   
