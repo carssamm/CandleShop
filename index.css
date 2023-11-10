@@ -92,14 +92,48 @@ margin: 0 auto;
     flex-direction: row;
 }
 
+/* contact-info section */
+
+.contact-flex {
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 150px;
+}
+
+.info-parent {
+  display: flex;
+  width: calc(50% - 20px);
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-single {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.map-image {
+  max-height: 350px;
+}
+
+.icon-image {
+  width: 30px;
+  height: 30px;
+}
+
 #body {
     position: relative;
     min-height: 100vh;
 }
 
 #footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
 
