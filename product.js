@@ -38,23 +38,27 @@ function loadProduct(slugID) {
     };
     xhr.send();
 }
-function implementProduct(product) {
-    // Change Site Title
-    document.querySelector("title").innerHTML = product.name;
-    // Get Dynamic Product Elements
-    let productImage = document.getElementById("productImage");
-    let productName = document.getElementById("productName");
-    let productDescription = document.getElementById("productDescription");
-    let productPrice = document.getElementById("productPrice");
 
-    // Set Values
-    productImage.src = product.image.src;
-    productImage.alt = product.image.alt;
-    productName.innerHTML = product.name;
-    productDescription.innerHTML = product.description;
-    productPrice.innerHTML = product.price.net+" "+product.price.currency;
+document.addEventListener('DOMContentLoaded')
+{
+    function implementProduct(product) {
+        // Change Site Title
+        document.querySelector("title").innerHTML = product.name;
+        // Get Dynamic Product Elements
+        let productImage = document.getElementById("productImage");
+        let productName = document.getElementById("productName");
+        let productDescription = document.getElementById("productDescription");
+        let productPrice = document.getElementById("productPrice");
+
+        // Set Values
+        productImage.src = product.image.src;
+        productImage.alt = product.image.alt;
+        productName.innerHTML = product.name;
+        productDescription.innerHTML = product.description;
+        productPrice.innerHTML = product.price.net + " " + product.price.currency;
+    }
 }
-if (slugID !== null){
+if (slugID !== null) {
     loadProduct(slugID);
 } else {
     window.location = "/";
