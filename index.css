@@ -118,6 +118,11 @@ body {
 /* Logo styles */
 #logo {
   width: 5%;
+  cursor: pointer;
+}
+
+h1{
+  cursor: pointer;
 }
 
 /* Title styles, centered with animated transition */
