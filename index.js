@@ -1,3 +1,19 @@
+function checkResolution(){
+    //Get the current window width
+    var windowWidth = window.innerWidth;
+    //Get the two items from the about us section
+    var aboutUsText = document.getElementById('aboutustext');
+    var aboutUsImage = document.getElementById('aboutusimage');
+
+    //Check if the window widht is 767px or less
+    if (windowWidth <= 767){
+        document.getElementById('paragraph2').style.display = 'none';
+        document.getElementById('paragraph3').style.display = 'none';
+        aboutUsText.insertAdjacentElement('beforebegin', aboutUsImage);
+
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     $('.candle-slider').slick({
         slidesToShow: 2,
