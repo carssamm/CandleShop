@@ -50,6 +50,14 @@
             <a href="#">Produkt 3</a>
         </div>
     </div>
+        <!-- Side navigation bar with close button, links, and items -->
+        <div id="SideNavID" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="sidenav-item" style="color: #6f6f6f" href="index.html">Startseite</a>
+            <a class="sidenav-item" href="product.html">Produkte</a>
+            <a class="sidenav-item" href="#">Produktion</a>
+            <a class="sidenav-item" href="#">Kontakt</a>
+        </div>
     <div class="container">
         <div class="about-us-text" id="aboutustext">
         <h2>Über uns</h2>
@@ -77,14 +85,6 @@
             <img src="/assets/img/kerzen-giessen-2.jpg" alt="Ihr Bild">
         </div>
     </div>
-    </div>
-    <!-- Side navigation bar with close button, links, and items -->
-    <div id="SideNavID" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a class="sidenav-item" href="#">Startseite</a>
-        <a class="sidenav-item" href="product.html">Produkte</a>
-        <a class="sidenav-item" href="#">Produktion</a>
-        <a class="sidenav-item" href="#">Kontakt</a>
     </div>
     <!-- slider start -->
     <div class="slider-container">
@@ -137,7 +137,7 @@
 <!-- slider end -->
 
 <div class="contact-flex">
-    <div class="info-parent">
+    <div class="info-parent" id="infopartentext">
         <h3>
             Wo finden Sie uns?
         </h3>
@@ -166,7 +166,7 @@
             </div>
         </div>
     </div>
-    <div class="info-parent">
+    <div class="info-parent" id="infopartentimage">
         <div class="map-container">
             <a href="#">
                 <img class="map-image" src="assets/img/map-image.png" alt="Google Maps Route">
