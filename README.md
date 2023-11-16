@@ -7,3 +7,6 @@ Das Projekt wird vom Team WebGPT/ Team 1 (Armin, Ben, Gabriela, Mohammad, Ricard
 Die Website wird mit Standard-/Plain-JavaScript erstellt.
 
 Geplant sind drei Seiten-Typen (Hauptseite, Seite für Produktions- und Marketingvorstellung und Produktseiten).
+
+## How to run
+index.html im Browser öffnen.
