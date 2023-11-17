@@ -71,9 +71,9 @@ function openNav() {
   }
   
   // Adds an event listener to reload the page when the window resolution changes
-  window.addEventListener('resize', function() {
-      location.reload();
-  });
+//   window.addEventListener('resize', function() {
+//       location.reload();
+//   });
   function toggleText() {
     var paragraph2 = document.getElementById('paragraph2');
     var paragraph3 = document.getElementById('paragraph3');
