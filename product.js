@@ -16,49 +16,55 @@ Dazu müsste die URL History mittels JavaScript manipuliert werden, und bestenfa
 Diese Funktion ist jedoch für den alleinigen Zweck der Übung nicht notwendig.
 
 */
-let slugID = null;
-if (window.location.search) {
-    // Produkt ID aus dem Slug auslesen
-    slugID = window.location.search.split("=")[1];
-}
+
+window.onload = () => {
+
+    let slugID = null;
+    if (window.location.search) {
+        // Produkt ID aus dem Slug auslesen
+        slugID = window.location.search.split("=")[1];
+    }
 
 // Funktion zum Laden der Produkte aus der JSON mittels plain JavaScript ohne JQUERY
-function loadProduct(slugID) {
-    let products = null;
-    let product = null;
-    let xhr = new XMLHttpRequest();
-    xhr.open("GET", "products.json");
-    xhr.onload = function () {
-        if (this.status === 200) {
-            // JSON in ein JavaScript Objekt umwandeln und in der Variable products speichern
-            products = JSON.parse(this.responseText).products;
-            product = products.find(product => product.id == slugID);
-            implementProduct(product);
-        }
-    };
-    xhr.send();
-}
-
-{
-    function implementProduct(product) {
-        // Change Site Title
-        document.querySelector("title").innerHTML = product.name;
-        // Get Dynamic Product Elements
-        let productImage = document.getElementById("productImage");
-        let productName = document.getElementById("productName");
-        let productDescription = document.getElementById("productDescription");
-        let productPrice = document.getElementById("productPrice");
-
-        // Set Values
-        productImage.src = product.image.src;
-        productImage.alt = product.image.alt;
-        productName.innerHTML = product.name;
-        productDescription.innerHTML = product.description;
-        productPrice.innerHTML = product.price.net + " " + product.price.currency;
+    function loadProduct(slugID) {
+        let products = null;
+        let product = null;
+        let xhr = new XMLHttpRequest();
+        xhr.open("GET", "products.json");
+        xhr.onload = function () {
+            if (this.status === 200) {
+                // JSON in ein JavaScript Objekt umwandeln und in der Variable products speichern
+                products = JSON.parse(this.responseText).products;
+                product = products.find(product => product.id == slugID);
+                implementProduct(product);
+            }
+        };
+        xhr.send();
     }
-}
-if (slugID !== null) {
-    loadProduct(slugID);
-} else {
-    window.location = "/";
-}
+
+    {
+        function implementProduct(product) {
+            // Change Site Title
+            document.querySelector("title").innerHTML = product.name;
+            // Get Dynamic Product Elements
+            let productImage = document.getElementById("productImage");
+            let productName = document.getElementById("productName");
+            let productDescription = document.getElementById("productDescription");
+            let productPrice = document.getElementById("productPrice");
+
+            // Set Values
+            productName.innerHTML = product.name;
+            productDescription.innerHTML = product.description;
+            productPrice.innerHTML = product.price.net + " " + product.price.currency;
+            productImage.src = product.image.src;
+            productImage.alt = product.image.alt;
+
+        }
+    }
+    if (slugID !== null) {
+        loadProduct(slugID);
+    } else {
+        window.location = "/";
+    }
+
+};
