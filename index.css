@@ -54,6 +54,12 @@
   border: 1px solid #000;
   border-radius: 10px;
   background-color: #000;
+  transition: all .3s ease-in-out;
+}
+
+.more-info-button:hover {
+  background-color: #b76e79;
+  border-color: #b76e79;
 }
 
 .more-info-button {
