@@ -2,12 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kerzentitle</title>
+    <title>Kerzen</title>
     <script type="application/javascript" src="product.js"></script>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
-<body>
-
+<body id="body" onload="checkResolution()">
+    <div id="content-wrap">
+        <!-- Header section containing the logo, title, and navigation items -->
+        <div id="header">
+            <div id="header-mobil">
+                <!-- Off-canvas symbol for mobile view, triggers the openNav function on click -->
+                <div class="offcanvasymbol" id="offcanvasymbol"><a href="javascript:void(0)" class="offcanvasymbol"
+                                                                   onclick="openNav()">&#9776</a></div>
+                <!-- Title section with logo and site name -->
+                <div id="title">
+                    <img id="logo" src="assets/img/logo_candleshop_12_11_10_2023_rs.png" alt="CandleShop-Logo"
+                         onclick="location.href = 'index.html'">
+                    <h1 class="title-text" onclick="location.href = 'index.html'">Candle Shop</h1>
+                </div>
+            </div>
+            <!-- Navigation items with links and walls for separation -->
+            <div id="header-items">
+                <div class="header-item" onmouseover="hideDropDown()"><a href="index.html" style="color: #6f6f6f">Startseite</a>
+                </div>
+                <div class="wall"></div>
+                <!-- Dropdown-triggering header item with mouseover event -->
+                <div class="header-item" onmouseover="showDropDown()">
+                    <a href="#">Produkte</a>
+                </div>
+                <div class="wall"></div>
+                <div class="header-item" onmouseover="hideDropDown()"><a href="production.html">Produktion</a></div>
+                <div class="wall"></div>
+                <div class="header-item" onmouseover="hideDropDown()"><a href="#">Kontakt</a></div>
+            </div>
+        </div>
+        <!-- Dropdown bar with mouseout event to hide the dropdown content -->
+        <div class="drpdwn-bar">
+            <div class="drpdwn-content">
+                <a href="#">Produkt 1</a>
+                <a href="#">Produkt 2</a>
+                <a href="#">Produkt 3</a>
+            </div>
+        </div>
+            <!-- Side navigation bar with close button, links, and items -->
+            <div id="SideNavID" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="sidenav-item" style="color: #6f6f6f" href="index.html">Startseite</a>
+                <a class="sidenav-item" href="product.html">Produkte</a>
+                <a class="sidenav-item" href="production.html">Produktion</a>
+                <a class="sidenav-item" href="#">Kontakt</a>
+            </div>
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -49,8 +99,6 @@
 </div>
 
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+    </div>
 </body>
 </html>
