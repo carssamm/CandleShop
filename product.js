@@ -17,7 +17,6 @@ Diese Funktion ist jedoch für den alleinigen Zweck der Übung nicht notwendig.
 
 */
 
-window.onload = () => {
 
     let slugID = null;
     if (window.location.search) {
@@ -66,5 +65,3 @@ window.onload = () => {
     } else {
         window.location = "/";
     }
-
-};
