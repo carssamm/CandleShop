@@ -63,5 +63,6 @@ Diese Funktion ist jedoch für den alleinigen Zweck der Übung nicht notwendig.
     if (slugID !== null) {
         loadProduct(slugID);
     } else {
-        window.location = "/";
+        // window.location = "/";
+        console.log("Keine ID gefunden");
     }
