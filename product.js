@@ -39,7 +39,6 @@ function loadProduct(slugID) {
     xhr.send();
 }
 
-document.addEventListener('DOMContentLoaded')
 {
     function implementProduct(product) {
         // Change Site Title
