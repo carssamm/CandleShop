@@ -3,6 +3,7 @@
   max-width: 357px;
   object-fit: cover;
   max-height: 357px;
+  border: 15px;
 }
 
 .single-slide {
