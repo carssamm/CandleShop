@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
     $('.candle-slider').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
         responsive: [
             {
