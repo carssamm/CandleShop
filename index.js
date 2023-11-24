@@ -50,7 +50,7 @@ function openNav() {
     document.getElementById("SideNavID").style.width = "0";
     document.getElementById("title").style.marginLeft = "0";
     document.getElementById("offcanvasymbol").style.visibility = "visible";
-    document.getElementById("header").style.background = "#d9d9d9";
+    document.getElementById("header").style.background = "#b76e79";
     var dropDownElements = document.querySelector('.drpdwn-content');
     dropDownElements.classList.remove('active-mobile');
     document.body.style.backgroundColor = "#f0f0f0";
