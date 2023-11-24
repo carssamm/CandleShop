@@ -6,7 +6,7 @@ function checkResolution(){
     var aboutUsImage = document.getElementById('aboutusimage');
 
     //Check if the window widht is 767px or less
-    if (windowWidth <= 767){
+    if (windowWidth <= 1024){
         document.getElementById('paragraph2').style.display = 'none';
         document.getElementById('paragraph3').style.display = 'none';
         aboutUsText.insertAdjacentElement('beforebegin', aboutUsImage);
