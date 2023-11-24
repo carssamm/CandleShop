@@ -1,8 +1,8 @@
 /* slider */
 .slider-img {
-  max-width: 357px;
+  width: 357px;
   object-fit: cover;
-  max-height: 357px;
+  height: 357px;
   border-radius: 15px;
 }
 
@@ -694,8 +694,8 @@ img {
     max-width: 750px;
   }
   .slider-img {
-    max-width: 307px;
-    max-height: 307px;
+    width: 307px;
+    height: 307px;
   }
   .product-title-container, .product-info-inner {
     max-width: 307px;
@@ -713,7 +713,7 @@ img {
 
 @media (max-width: 767px) {
   .candle-slider {
-    max-width: 370px;
+    max-width: 350px;
   }
 }
 
