@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="production.css" />
+    <link rel="stylesheet" href="production.css"/>
     <link rel="stylesheet" href="index.css"/>
     <script src="index.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <title>Produktion</title>
 </head>
 
 <body id="body" onload="checkResolution()">
-  <div id="content-wrap">
+<div id="content-wrap">
     <!-- Header section containing the logo, title, and navigation items -->
     <div id="header">
         <div id="header-mobil">
@@ -37,7 +37,8 @@
                 <a href="#">Produkte</a>
             </div>
             <div class="wall"></div>
-            <div class="header-item" onmouseover="hideDropDown()"><a href="production.html" style="color: #6f6f6f">Produktion</a></div>
+            <div class="header-item" onmouseover="hideDropDown()"><a href="production.html" style="color: #6f6f6f">Produktion</a>
+            </div>
             <div class="wall"></div>
             <div class="header-item" onmouseover="hideDropDown()"><a href="#">Kontakt</a></div>
         </div>
@@ -45,36 +46,47 @@
     <!-- Dropdown bar with mouseout event to hide the dropdown content -->
     <div class="drpdwn-bar">
         <div class="drpdwn-content">
-          <a href="/product.html?id=1">Produkt 1</a>
-          <a href="/product.html?id=2">Produkt 2</a>
-          <a href="/product.html?id=3">Produkt 3</a>
+            <a href="/product.html?id=1">Produkt 1</a>
+            <a href="/product.html?id=2">Produkt 2</a>
+            <a href="/product.html?id=3">Produkt 3</a>
         </div>
     </div>
-        <!-- Side navigation bar with close button, links, and items -->
-        <div id="SideNavID" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a class="sidenav-item" href="index.html">Startseite</a>
-            <a class="sidenav-item" href="#">Produkte</a>
-            <a class="sidenav-item" style="color: #6f6f6f" href="production.html">Produktion</a>
-            <a class="sidenav-item" href="#">Kontakt</a>
-        </div>
-        </div>
-  <h2 onmouseover="hideDropDown()">Produktion</h2>
-  <div class="row">
+    <!-- Side navigation bar with close button, links, and items -->
+    <div id="SideNavID" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="sidenav-item" href="index.html">Startseite</a>
+        <a class="sidenav-item" href="#">Produkte</a>
+        <a class="sidenav-item" style="color: #6f6f6f" href="production.html">Produktion</a>
+        <a class="sidenav-item" href="#">Kontakt</a>
+    </div>
+</div>
+
+<style>
+    h2 {
+        text-align: center;
+    }
+    .gallery {
+        width: 75%;
+        margin: auto;
+    }
+</style>
+
+<h2 onmouseover="hideDropDown()">Produktion</h2>
+<div class="row gallery">
     <div class="column">
-      <img src="assets/img/work_01.jpg">
-      <img src="assets/img/work_04.jpg">
-      <img src="assets/img/work_07.jpeg">
+        <img src="assets/img/work_01.jpg">
+        <img src="assets/img/work_04.jpg">
+        <img src="assets/img/work_07.jpeg">
     </div>
     <div class="column">
-      <img src="assets/img/work_02.jpg">
-      <img src="assets/img/work_05.jpg">
-      <img src="assets/img/work_08.jpeg">
+        <img src="assets/img/work_02.jpg">
+        <img src="assets/img/work_05.jpg">
+        <img src="assets/img/work_08.jpeg">
     </div>
     <div class="column">
-      <img src="assets/img/work_03.jpg">
-      <img src="assets/img/work_06.jpg">
+        <img src="assets/img/work_03.jpg">
+        <img src="assets/img/work_06.jpg">
     </div>
-  </div>
+</div>
 </body>
 </html>
