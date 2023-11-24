@@ -637,6 +637,25 @@ img {
   }
 }
 
+@media (max-width: 1024px) {
+  .candle-slider {
+    max-width: 750px;
+  }
+  .slider-img {
+    max-width: 307px;
+    max-height: 307px;
+  }
+  .product-title-container, .product-info-inner {
+    max-width: 307px;
+  }
+}
+
+@media (max-width: 767px) {
+  .candle-slider {
+    max-width: 370px;
+  }
+}
+
 /* Media Query for screens with a minimum width of 2000px */
 @media screen and (min-width: 2000px) {
   /* Adjust title font size, logo size, and header items width */
