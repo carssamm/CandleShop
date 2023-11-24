@@ -85,6 +85,7 @@
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 100px;
   margin-bottom: 150px;
 }
 
@@ -127,10 +128,6 @@
   text-align: center;
   word-spacing: 30px;
   padding: 10px;
-}
-
-#content-wrap {
-  padding-bottom: 4rem; /* Footer height */
 }
 
 /* General styles for body and font family */
@@ -326,6 +323,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   max-width: 80%;
+  gap: 100px;
+  margin-bottom: 100px;
   justify-content: center;
 }
 .container span {
@@ -336,7 +335,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: calc(50% - 60px);
 }
 .text,
 .image {
@@ -698,6 +697,15 @@ img {
   }
   .product-title-container, .product-info-inner {
     max-width: 307px;
+  }
+
+  .about-us-text,
+  .about-us-image {
+    width: 100%;
+  }
+
+  .container {
+    gap: 0;
   }
 }
 
