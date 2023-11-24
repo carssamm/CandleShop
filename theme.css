@@ -1,0 +1,43 @@
+/* Define the colors */
+:root {
+  --accent-color-1: #FFFFFF; /* White (accent) */
+  --accent-color-2: #D3D3D3; /* Light Gray (accent) */
+  --accent-color-3: #333333; /* Dark Gray (accent) */
+  --main-color: #B76E79;   /* Main Color (top) */
+  --second-color: #AA6373; /* Second Color (shadow) */
+}
+
+/* Define typography */
+body {
+  font-family: "Bondi", sans-serif;
+  background: #EFEBDC;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Garamond", serif;
+}
+
+/* Apply colors to specific elements or classes */
+.accent-bg {
+  background-color: var(--accent-color-1);
+}
+
+.accent-text {
+  color: var(--accent-color-1);
+}
+
+.main-bg {
+  background-color: var(--main-color);
+}
+
+.main-text {
+  color: var(--main-color);
+}
+
+.second-bg {
+  background-color: var(--second-color);
+}
+
+.second-text {
+  color: var(--second-color);
+}
