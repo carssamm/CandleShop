@@ -67,9 +67,17 @@ function loadAllProducts() {
     xhr.onload = function () {
         if (this.status === 200) {
             products = JSON.parse(this.responseText).products;
-            console.log(products)
+
+            // Iterate over each product in the 'products' array with jQuery
+            products.forEach(function (product, index) {
+                // Update the content for each slide
+                $(".slider-heading" + (index + 1)).text(product.name);
+                $(".product-price" + (index + 1)).text(product.price.net + " " + product.price.currency);
+                $(".slider-img" + (index + 1)).attr("src", product.image.src);
+                $(".slider-img" + (index + 1)).attr("alt", product.image.alt);
+            });
         }
-    };
+    }
     xhr.send();
 }
 

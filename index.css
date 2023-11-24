@@ -1,6 +1,8 @@
 /* slider */
 .slider-img {
   max-width: 357px;
+  object-fit: cover;
+  max-height: 357px;
 }
 
 .single-slide {
