@@ -55,11 +55,11 @@
         <div id="SideNavID" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a class="sidenav-item" style="color: #6f6f6f" href="index.html">Startseite</a>
-            <a class="sidenav-item" href="#">Produkte</a>
+            <a class="sidenav-item" onclick="showDropDown()" href="#">Produkte</a>
             <a class="sidenav-item" href="production.html">Produktion</a>
             <a class="sidenav-item" href="#">Kontakt</a>
         </div>
-    <div class="container" onmouseover="hideDropDown()">
+    <div class="container" onmouseover="hideDropDown()" onclick="closeNav()">
         <div class="about-us-text" id="aboutustext">
         <h2>Über uns</h2>
         <div class="text" id="textcontainer">
