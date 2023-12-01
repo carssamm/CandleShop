@@ -12,67 +12,94 @@
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <title>CandleShop - BBS1 - Produktion</title>
     <script src="index.js" defer></script>
+    <style>
+        @media (min-width: 1024px) {
+            #productImage {
+                width: 100%;
+            }
 
+            .col-3 {
+                width: 33%;
+            }
+
+            .col-9 {
+                width: 66%;
+            }
+
+            .row {
+                display: flex;
+                gap: 2em;
+            }
+        }
+        .container {
+            padding-left: 15px;
+            padding-right: 15px;
+            max-width: 100vw;
+        }
+        #productImage {
+            width: 100%;
+        }
+    </style>
 </head>
 <body id="body">
-    <div id="content-wrap">
-        <!-- Header section containing the logo, title, and navigation items -->
-        <div id="header">
-            <div id="header-mobil">
-                <!-- Off-canvas symbol for mobile view, triggers the openNav function on click -->
-                <div class="offcanvasymbol" id="offcanvasymbol"><a href="javascript:void(0)" class="offcanvasymbol"
-                                                                   onclick="openNav()">&#9776</a></div>
-                <!-- Title section with logo and site name -->
-                <div id="title">
-                    <img id="logo" src="assets/img/logo_candleshop_12_11_10_2023_rs.png" alt="CandleShop-Logo"
-                         onclick="location.href = 'index.html'">
-                    <h1 class="title-text" onclick="location.href = 'index.html'">Candle Shop</h1>
-                </div>
-            </div>
-            <!-- Navigation items with links and walls for separation -->
-            <div id="header-items">
-                <div class="header-item" onmouseover="hideDropDown()"><a href="index.html">Startseite</a>
-                </div>
-                <div class="wall"></div>
-                <!-- Dropdown-triggering header item with mouseover event -->
-                <div class="header-item" onmouseover="showDropDown()">
-                    <a href="#" style="color: #6f6f6f">Produkte</a>
-                </div>
-                <div class="wall"></div>
-                <div class="header-item" onmouseover="hideDropDown()"><a href="production.html">Produktion</a></div>
-                <div class="wall"></div>
-                <div class="header-item" onmouseover="hideDropDown()"><a href="#">Kontakt</a></div>
+<div id="content-wrap">
+    <!-- Header section containing the logo, title, and navigation items -->
+    <div id="header">
+        <div id="header-mobil">
+            <!-- Off-canvas symbol for mobile view, triggers the openNav function on click -->
+            <div class="offcanvasymbol" id="offcanvasymbol"><a href="javascript:void(0)" class="offcanvasymbol"
+                                                               onclick="openNav()">&#9776</a></div>
+            <!-- Title section with logo and site name -->
+            <div id="title">
+                <img id="logo" src="assets/img/logo_candleshop_12_11_10_2023_rs.png" alt="CandleShop-Logo"
+                     onclick="location.href = 'index.html'">
+                <h1 class="title-text" onclick="location.href = 'index.html'">Candle Shop</h1>
             </div>
         </div>
-        <!-- Dropdown bar with mouseout event to hide the dropdown content -->
-        <div class="drpdwn-bar">
-            <div class="drpdwn-content">
-                <a href="/product.html?id=1">Bubble-Kerze</a>
-                <a href="/product.html?id=2">Tannenzapfen-Kerze</a>
-                <a href="/product.html?id=3">Glas-Kerze</a>
+        <!-- Navigation items with links and walls for separation -->
+        <div id="header-items">
+            <div class="header-item" onmouseover="hideDropDown()"><a href="index.html">Startseite</a>
             </div>
-        </div>
-            <!-- Side navigation bar with close button, links, and items -->
-            <div id="SideNavID" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a class="sidenav-item" href="index.html">Startseite</a>
-                <a class="sidenav-item" onclick="showDropDown()" style="color: #6f6f6f">Produkte</a>
-                <a class="sidenav-item" href="production.html">Produktion</a>
-                <a class="sidenav-item" href="#">Kontakt</a>
+            <div class="wall"></div>
+            <!-- Dropdown-triggering header item with mouseover event -->
+            <div class="header-item" onmouseover="showDropDown()">
+                <a href="#" style="color: #6f6f6f">Produkte</a>
             </div>
-
-<div class="container mt-5" onclick="closeNav()">
-    <div class="row align-items-start">
-        <div class="col-3">
-            <img id="productImage" class="img-fluid"/>
-        </div>
-        <div class="col-9">
-            <h1 id="productName"></h1>
-            <div id="productDescription"></div>
-            <h3 class="float-end" id="productPrice"></h3>
+            <div class="wall"></div>
+            <div class="header-item" onmouseover="hideDropDown()"><a href="production.html">Produktion</a></div>
+            <div class="wall"></div>
+            <div class="header-item" onmouseover="hideDropDown()"><a href="#">Kontakt</a></div>
         </div>
     </div>
-</div>
+    <!-- Dropdown bar with mouseout event to hide the dropdown content -->
+    <div class="drpdwn-bar">
+        <div class="drpdwn-content">
+            <a href="/product.html?id=1">Bubble-Kerze</a>
+            <a href="/product.html?id=2">Tannenzapfen-Kerze</a>
+            <a href="/product.html?id=3">Glas-Kerze</a>
+        </div>
+    </div>
+    <!-- Side navigation bar with close button, links, and items -->
+    <div id="SideNavID" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="sidenav-item" href="index.html">Startseite</a>
+        <a class="sidenav-item" onclick="showDropDown()" style="color: #6f6f6f">Produkte</a>
+        <a class="sidenav-item" href="production.html">Produktion</a>
+        <a class="sidenav-item" href="#">Kontakt</a>
+    </div>
+
+    <div class="container mt-5" onclick="closeNav()">
+        <div class="row align-items-start">
+            <div class="col-3">
+                <img id="productImage" class="img-fluid"/>
+            </div>
+            <div class="col-9">
+                <h1 id="productName"></h1>
+                <div id="productDescription"></div>
+                <h3 class="float-end" id="productPrice"></h3>
+            </div>
+        </div>
+    </div>
 
 
 </div>
