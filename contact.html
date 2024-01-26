@@ -67,7 +67,7 @@
         <div class="container" onmouseover="hideDropDown()" onclick="closeNav()">
             <form action="#" id="contact-form" method="POST" accept-charset="UTF-8">
                 <fieldset>
-                <label for="anrede">Anrede</label>
+                <label for="anrede">Anrede*</label>
                     <select id="anrede" name="Anrede">
                         <option value="Herr">Herr</option>
                         <option value="Frau">Frau</option>
@@ -75,11 +75,11 @@
                         <option value="Keine Angabe">Keine Angabe</option>
                     </select>
                 <label>
-                    Vorname
+                    Vorname*
                     <input type="text" name="Vorname" required>
                  </label>
                   <label>
-                    Nachname
+                    Nachname*
                     <input type="text" name="Nachname" required>
                   </label>
                   <label>
@@ -87,7 +87,7 @@
                     <input type="date" name="Geburtstag">
                   </label>
                   <label>
-                    E-Mail-Adresse
+                    E-Mail-Adresse*
                     <input type="email" name="E-Mail" required>
                   </label>
                   <label>
@@ -99,13 +99,15 @@
                     <input type="text" name="Adresse">
                   </label>
                   <label>
-                    Ihre Anliegen
+                    Ihre Anliegen*
                     <textarea rows="3" name="Nachricht" required></textarea>
                   </label>
                   <div>
                     <label>
-                      <input type="checkbox" name="Datenverarbeitung bestätigt" value="Ja" required>
-                      Ich bestätige, dass ich mit der Verarbeitung meiner Eingaben zum Zwecke der Anfragebearbeitung, einverstanden bin.
+                      <p>
+                        <input type="checkbox" name="Datenverarbeitung bestätigt" value="Ja" required>
+                      Ich habe die <a href="#">Datenschutzerklärung</a> zur Kenntnis genommen und stimme zu, dass meine Daten elektronisch gespeichert werden. Ich kann die Einwilligung jederzeit widerrufen.
+                    </p>
                     </label>
                   </div>
                 </fieldset>
