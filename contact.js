@@ -26,8 +26,8 @@ window.addEventListener('load', function () {
             Host: "smtp.elasticemail.com",
             Username: "ricardo.eid@bbs1-lueneburg.de",
             Password: "129B6215BEAABE2597C49CBE559D969FA6C2",
-            To: "ricardo.eid@bbs1-lueneburg.de",
-            From: "ricardo.eid@bbs1-lueneburg.de",
+            To: email,
+            From: "candleshop@bbs1-lueneburg.de",
             Subject: `${name} Just messaged you from the website form`,
             Body: `${name} <br> ${lastname} <br> Email: ${email} <br> ${msg} <br>`,
         }).then((success) => {
