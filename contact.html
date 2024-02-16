@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="theme.css" />
@@ -17,6 +17,8 @@
     <script src="index.js" defer></script>
       <script src="https://smtpjs.com/v3/smtp.js"></script>
       <script src="contact.js" type="application/javascript"></script>
+    <script src="privacy_policy.js" defer></script>
+    <script src="contact.js" type="application/javascript"></script>
     <script type="application/javascript" src="product.js"></script>
     <title>CandleShop - BBS1 - Produktion</title>
   </head>
@@ -47,7 +49,7 @@
                 <div class="wall"></div>
                 <div class="header-item" onmouseover="hideDropDown()"><a href="production.html">Produktion</a></div>
                 <div class="wall"></div>
-                <div class="header-item" onmouseover="hideDropDown()"><a href="contact.html">Kontakt</a></div>
+                <div class="header-item" onmouseover="hideDropDown()"><a href="contact.html" style="color: #6f6f6f">Kontakt</a></div>
             </div>
         </div>
         <!-- Dropdown bar with mouseout event to hide the dropdown content -->
@@ -108,7 +110,7 @@
                     <label>
                       <p>
                         <input type="checkbox" name="Datenverarbeitung bestätigt" value="Ja" required>
-                      Ich habe die <a href="#">Datenschutzerklärung</a> zur Kenntnis genommen und stimme zu, dass meine Daten elektronisch gespeichert werden. Ich kann die Einwilligung jederzeit widerrufen.
+                      Ich habe die <a href="#" onclick="openModal()">Datenschutzerklärung</a> zur Kenntnis genommen und stimme zu, dass meine Daten elektronisch gespeichert werden. Ich kann die Einwilligung jederzeit widerrufen.
                     </p>
                     </label>
                   </div>
@@ -121,11 +123,22 @@
     <footer id="footer">
       <hr style="width: 95%; margin: auto" />
       <div id="footer-content">
-        <a class="text-dark" style="text-decoration: none" href="imprint.html">Impressum</a>
-        <a class="text-dark"
-           style="text-decoration: none"
-           href="https://www.bbs1-lueneburg.de/datenschutz.html">Datenschutz</a>
+        <a class="text-dark" style="text-decoration: none" href="imprint.html"
+          >Impressum</a>
+        <a
+          class="text-dark"
+          style="text-decoration: none"
+          href="https://www.bbs1-lueneburg.de/datenschutz.html"
+          >Datenschutz</a
+        >
       </div>
     </footer>
+
+    <!-- Das Modal -->
+    <div id="myModal">
+      <div id="modalContent"></div>
+      <button onclick="closeModal()">Schließen</button>
+    </div>
+
   </body>
 </html>
