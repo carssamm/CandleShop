@@ -64,15 +64,15 @@
                 <a class="sidenav-item" href="production.html">Produktion</a>
                 <a class="sidenav-item" href="contact.html">Kontakt</a>
             </div>
-        <div class="container" onmouseover="hideDropDown()" onclick="closeNav()">
+        <div class="container" onmouseover="hideDropDown()">
             <form action="#" id="contact-form" method="POST" accept-charset="UTF-8">
                 <fieldset>
                 <label for="anrede">Anrede*</label>
                     <select id="anrede" name="Anrede">
+                        <option value="Keine Angabe">Keine Angabe</option>
                         <option value="Herr">Herr</option>
                         <option value="Frau">Frau</option>
                         <option value="Divers">Divers</option>
-                        <option value="Keine Angabe">Keine Angabe</option>
                     </select>
                 <label>
                     Vorname*
@@ -115,6 +115,7 @@
                   <input type="submit" value="Absenden">
                 </div>
               </form>
+        </div>
     <footer id="footer">
       <hr style="width: 95%; margin: auto" />
       <div id="footer-content">
