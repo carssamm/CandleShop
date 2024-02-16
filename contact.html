@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="theme.css" />
@@ -15,7 +15,8 @@
     ></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="index.js" defer></script>
-    <script src="contact.js" type="application/javascript"></script>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script src="contact.js" type="application/javascript"></script>
     <script type="application/javascript" src="product.js"></script>
     <title>CandleShop - BBS1 - Produktion</title>
   </head>
@@ -77,11 +78,11 @@
                     </select>
                 <label>
                     Vorname*
-                    <input type="text" name="Vorname" required>
+                    <input id="name" type="text" name="Vorname" required>
                  </label>
                   <label>
                     Nachname*
-                    <input type="text" name="Nachname" required>
+                    <input id="lastname" type="text" name="Nachname" required>
                   </label>
                   <!-- <label>
                     Geburtstag
@@ -89,7 +90,7 @@
                   </label> -->
                   <label>
                     E-Mail-Adresse*
-                    <input type="email" name="E-Mail" required>
+                    <input id="mail" type="email" name="E-Mail" required>
                   </label>
                   <!-- <label>
                     Telefonnummer
@@ -101,7 +102,7 @@
                   </label> -->
                   <label>
                     Ihre Anliegen*
-                    <textarea rows="3" name="Nachricht" required></textarea>
+                    <textarea id="msg" rows="3" name="Nachricht" required></textarea>
                   </label>
                   <div>
                     <label>
@@ -113,21 +114,17 @@
                   </div>
                 </fieldset>
                 <div class="btns">
-                  <input type="submit" value="Absenden">
+                  <input id="submit-form" type="submit" value="Absenden">
                 </div>
               </form>
         </div>
     <footer id="footer">
       <hr style="width: 95%; margin: auto" />
       <div id="footer-content">
-        <a class="text-dark" style="text-decoration: none" href="imprint.html"
-          >Impressum</a>
-        <a
-          class="text-dark"
-          style="text-decoration: none"
-          href="https://www.bbs1-lueneburg.de/datenschutz.html"
-          >Datenschutz</a
-        >
+        <a class="text-dark" style="text-decoration: none" href="imprint.html">Impressum</a>
+        <a class="text-dark"
+           style="text-decoration: none"
+           href="https://www.bbs1-lueneburg.de/datenschutz.html">Datenschutz</a>
       </div>
     </footer>
   </body>
