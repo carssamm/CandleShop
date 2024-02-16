@@ -15,6 +15,7 @@
     ></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="index.js" defer></script>
+    <script src="privacy_policy.js" defer></script>
     <script src="contact.js" type="application/javascript"></script>
     <script type="application/javascript" src="product.js"></script>
     <title>CandleShop - BBS1 - Produktion</title>
@@ -107,7 +108,7 @@
                     <label>
                       <p>
                         <input type="checkbox" name="Datenverarbeitung bestätigt" value="Ja" required>
-                      Ich habe die <a href="#">Datenschutzerklärung</a> zur Kenntnis genommen und stimme zu, dass meine Daten elektronisch gespeichert werden. Ich kann die Einwilligung jederzeit widerrufen.
+                      Ich habe die <a href="#" onclick="openModal()">Datenschutzerklärung</a> zur Kenntnis genommen und stimme zu, dass meine Daten elektronisch gespeichert werden. Ich kann die Einwilligung jederzeit widerrufen.
                     </p>
                     </label>
                   </div>
@@ -130,5 +131,12 @@
         >
       </div>
     </footer>
+
+    <!-- Das Modal -->
+    <div id="myModal">
+      <div id="modalContent"></div>
+      <button onclick="closeModal()">Schließen</button>
+    </div>
+
   </body>
 </html>
