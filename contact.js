@@ -19,9 +19,9 @@ window.addEventListener('load', function () {
 
     function sendEmail(contactMail, name, email, lastname, msg) {
         Email.send({
-            Host: "smtp.elasticemail.com",
-            Username: "ricardo.eid@bbs1-lueneburg.de",
-            Password: "129B6215BEAABE2597C49CBE559D969FA6C2",
+            Host: "XX",
+            Username: "XX",
+            Password: "XX",
             To: contactMail,
             From: "no-reply@candleshop.de",
             Subject: `${name} CandleShop Contact Form`,
