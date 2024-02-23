@@ -5,7 +5,7 @@
       "name": "Bubble-Kerze",
       "description": "Text Kerze 0",
       "image": {
-        "src": "/assets/img/candle_bubble.jpeg",
+        "src": "assets/img/candle_bubble.jpeg",
         "alt": "Bubblekerze"
       },
       "price": {
@@ -19,7 +19,7 @@
       "name": "Tannenzapfen-Kerze",
       "description": "",
       "image": {
-        "src": "/assets/img/candle_pinecone.jpeg",
+        "src": "assets/img/candle_pinecone.jpeg",
         "alt": "Tannenzapfenkerze"
       },
       "price": {
@@ -33,7 +33,7 @@
       "name": "Glas-Kerze",
       "description": "",
       "image": {
-        "src": "/assets/img/candle_glass1.jpeg",
+        "src": "assets/img/candle_glass1.jpeg",
         "alt": "Glaskerze"
       },
       "price": {
