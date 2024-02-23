@@ -27,7 +27,7 @@ window.addEventListener('load', function () {
             Username: "ricardo.eid@bbs1-lueneburg.de",
             Password: "129B6215BEAABE2597C49CBE559D969FA6C2",
             To: email,
-            From: "candleshop@bbs1-lueneburg.de",
+            From: "no-reply@candleshop.de",
             Subject: `${name} Just messaged you from the website form`,
             Body: `${name} <br> ${lastname} <br> Email: ${email} <br> ${msg} <br>`,
         }).then((success) => {
