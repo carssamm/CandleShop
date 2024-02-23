@@ -72,7 +72,7 @@
   #contact-form select,
   #contact-form textarea {
     padding: 0;
-    line-height: 45px;
+    line-height: 65px;
     color: inherit
   }
   #contact-form [type=date],
