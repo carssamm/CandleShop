@@ -5,13 +5,13 @@
       "name": "Bubble-Kerze",
       "description": "Text Kerze 0",
       "image": {
-        "src": "assets/img/candle_bubble.jpeg",
-        "alt": "Google Logo"
+        "src": "/assets/img/candle_bubble.jpeg",
+        "alt": "Bubblekerze"
       },
       "price": {
         "net": 0.52,
         "tax": 19,
-        "currency": "EUR"
+        "currency": "€"
       }
     },
     {
@@ -19,13 +19,13 @@
       "name": "Tannenzapfen-Kerze",
       "description": "",
       "image": {
-        "src": "assets/img/candle_pinecone.jpeg",
-        "alt": "Google Logo"
+        "src": "/assets/img/candle_pinecone.jpeg",
+        "alt": "Tannenzapfenkerze"
       },
       "price": {
         "net": 1.15,
         "tax": 19,
-        "currency": "EUR"
+        "currency": "€"
       }
     },
     {
@@ -33,13 +33,13 @@
       "name": "Glas-Kerze",
       "description": "",
       "image": {
-        "src": "assets/img/candle_glass1.jpeg",
-        "alt": "Google Logo"
+        "src": "/assets/img/candle_glass1.jpeg",
+        "alt": "Glaskerze"
       },
       "price": {
         "net": 2.25,
         "tax": 19,
-        "currency": "EUR"
+        "currency": "€"
       }
     }
   ]
