@@ -79,6 +79,8 @@
   #contact-form [type=email],
   #contact-form[type=tel],
   #contact-form[type=text],
+  #contact-form [id=name],
+  #contact-form [id=lastname],
   #contact-form select,
   #contact-form textarea {
     -webkit-appearance: auto;
@@ -99,6 +101,8 @@
   #contact-form [type=email]:focus,
   #contact-form[type=tel]:focus,
   #contact-form[type=text]:focus,
+  #contact-form [id=name],
+  #contact-form [id=lastname],
   #contact-form select:focus,
   #contact-form textarea:focus {
     outline: 2px solid transparent;
@@ -306,6 +310,8 @@
   #contact-form [type=search],
   #contact-form [type=tel],
   #contact-form [type=text],
+  #contact-form [id=name],
+  #contact-form [id=lastname],
   #contact-form [type=time],
   #contact-form [type=url],
   #contact-form [type=week],
@@ -328,6 +334,8 @@
   #contact-form [type=search] select,
   #contact-form [type=tel] select,
   #contact-form [type=text] select,
+  #contact-form [id=name],
+  #contact-form [id=lastname],
   #contact-form [type=time] select,
   #contact-form [type=url] select,
   #contact-form [type=week] select,
@@ -346,6 +354,8 @@
   #contact-form [type=search]:focus,
   #contact-form [type=tel]:focus,
   #contact-form [type=text]:focus,
+  #contact-form [id=name],
+  #contact-form [id=lastname],
   #contact-form [type=time]:focus,
   #contact-form [type=url]:focus,
   #contact-form [type=week]:focus,
